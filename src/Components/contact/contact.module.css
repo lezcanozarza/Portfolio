@@ -1,0 +1,179 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid red; */
+  max-width: 730px;
+  min-height: 500px;
+  justify-content: space-around;
+
+}
+
+.TwhiteBackground{
+  font-family: Montserrat;
+  font-size: 25px;
+  width: 280px;
+  height: 45px;
+  border-style: none;
+  background-color: white;
+  box-shadow: 8px 8px #F0F0F0;
+}
+
+.iwhiteBackground{
+  font-family: Montserrat;
+  font-size: 25px;
+  width: 270px;
+  height: 45px;
+  border-style: none;
+  background-color: white;
+  padding-inline: 10px;
+  box-shadow: 8px 8px #F0F0F0;
+  transition: 0.3s
+}
+
+.iwhiteBackground:focus{
+  outline:none;
+  box-shadow: 13px 13px #F0F0F0;
+  transition: 0.3s
+}
+.textwhiteBackground{
+  font-family: Montserrat;
+  font-size: 25px;
+  width: 592px;
+  height: 210px;
+  border-style: none;
+  background-color: white;
+  padding-inline: 10px;
+  box-shadow: 8px 8px #F0F0F0;
+  transition: 0.3s
+}
+
+.textwhiteBackground:focus{
+  outline:none;
+  box-shadow: 13px 13px #F0F0F0;
+  transition: 0.3s
+}
+
+.whiteBackground{
+  font-family: Montserrat;
+  font-size: 25px;
+  width: 280px;
+  height: 45px;
+  border-style: none;
+  background-color: white;
+  /* padding-inline: 10px; */
+  box-shadow: 8px 8px #F0F0F0;
+  transition: 0.3s
+}
+
+.whiteBackground:hover{
+  box-shadow: 13px 13px #F0F0F0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.whiteBackground2{
+  font-family: Montserrat;
+  font-size: 25px;
+  width: 280px;
+  height: 45px;
+  border-style: none;
+  background-color: white;
+  /* padding-inline: 10px; */
+  filter: drop-shadow(8px 8px #F0F0F0);
+}
+
+.whiteBackground2::placeholder{
+  font-family: Montserrat;
+  font-style: italic;
+  color: #D2D2D2;
+  display: flex;
+  line-height: 35px;
+  padding-left: 10px;
+  font-size: 25px;
+}
+
+.whiteBackground::placeholder{
+  font-family: Montserrat;
+  font-style: italic;
+  color: #D2D2D2;
+  display: flex;
+  line-height: 50px;
+  font-size: 25px;
+}
+
+.subTitle{
+  font-family: Montserrat;
+  font-weight: bolder;
+  font-size: 28px;
+  background-color: white;
+  border-style: none;
+}
+.titlesubTitle{
+  font-family: Montserrat;
+  font-weight: bolder;
+  font-size: 35px;
+  background-color: white;
+  border-style: none;
+}
+
+.inputs{
+  display: flex;
+  justify-content: space-between;
+  width:612px;
+  /* flex-wrap: wrap; */
+}
+@media screen and (orientation: portrait){
+  .form{
+    width: 430px;
+  }
+  .iwhiteBackground{
+    width: auto;
+  }
+  .textwhiteBackground{
+    width: auto
+  }
+  .inputs{
+    margin: 0;
+    height: 120px;
+    display: contents;
+  }
+  .textwhiteBackground{
+    width: 365px
+  }
+}
+
+@media(max-width: 435px){
+  .form{
+    width: 350px;
+  }
+  .iwhiteBackground{
+    width: 310px;
+    height: 35px;
+  }
+  .textwhiteBackground{
+    width: auto
+  }
+  .inputs{
+    margin: 0;
+    height: 90px;
+    display: contents;
+  }
+  .textwhiteBackground{
+    width: 310px;
+  }
+  .titlesubTitle{
+    font-size: 23px
+  }
+  .TwhiteBackground{
+    height: 30px;
+    width: fit-content
+  }
+  .subTitle{
+    font-size: 20px
+  }
+  .whiteBackground{
+    height: 30px;
+    width: fit-content
+  }
+}

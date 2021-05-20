@@ -1,0 +1,43 @@
+// a:link, a:visited, a:active {
+//     text-decoration:none;
+// }
+
+.download{
+  color: #8EADD0;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  width: 100%;
+  height: 100%;
+}
+
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.block{
+  text-decoration:none;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  color: #8EADD0;
+  font-family: Montserrat;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.block:hover{
+  font-weight: 600;
+}
+@media screen and (orientation: portrait){
+  .block {
+    margin-bottom: 10px
+  }
+}
