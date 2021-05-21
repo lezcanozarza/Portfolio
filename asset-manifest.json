@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Portfolio./static/css/main.6b5077d3.chunk.css",
-    "main.js": "/Portfolio./static/js/main.575db2e9.chunk.js",
-    "main.js.map": "/Portfolio./static/js/main.575db2e9.chunk.js.map",
-    "runtime-main.js": "/Portfolio./static/js/runtime-main.36221d19.js",
-    "runtime-main.js.map": "/Portfolio./static/js/runtime-main.36221d19.js.map",
-    "static/js/2.9997e1be.chunk.js": "/Portfolio./static/js/2.9997e1be.chunk.js",
-    "static/js/2.9997e1be.chunk.js.map": "/Portfolio./static/js/2.9997e1be.chunk.js.map",
-    "static/js/3.202cf2f3.chunk.js": "/Portfolio./static/js/3.202cf2f3.chunk.js",
-    "static/js/3.202cf2f3.chunk.js.map": "/Portfolio./static/js/3.202cf2f3.chunk.js.map",
-    "index.html": "/Portfolio./index.html",
-    "static/css/main.6b5077d3.chunk.css.map": "/Portfolio./static/css/main.6b5077d3.chunk.css.map",
-    "static/js/2.9997e1be.chunk.js.LICENSE.txt": "/Portfolio./static/js/2.9997e1be.chunk.js.LICENSE.txt",
-    "static/media/Portoflio.81137b90.jpg": "/Portfolio./static/media/Portoflio.81137b90.jpg",
-    "static/media/country-finder-app.ad4d41e3.png": "/Portfolio./static/media/country-finder-app.ad4d41e3.png",
-    "static/media/techStore.4324192f.jpg": "/Portfolio./static/media/techStore.4324192f.jpg"
+    "main.css": "/myPortfolio/static/css/main.6b5077d3.chunk.css",
+    "main.js": "/myPortfolio/static/js/main.028ac941.chunk.js",
+    "main.js.map": "/myPortfolio/static/js/main.028ac941.chunk.js.map",
+    "runtime-main.js": "/myPortfolio/static/js/runtime-main.5b813b4d.js",
+    "runtime-main.js.map": "/myPortfolio/static/js/runtime-main.5b813b4d.js.map",
+    "static/js/2.9997e1be.chunk.js": "/myPortfolio/static/js/2.9997e1be.chunk.js",
+    "static/js/2.9997e1be.chunk.js.map": "/myPortfolio/static/js/2.9997e1be.chunk.js.map",
+    "static/js/3.202cf2f3.chunk.js": "/myPortfolio/static/js/3.202cf2f3.chunk.js",
+    "static/js/3.202cf2f3.chunk.js.map": "/myPortfolio/static/js/3.202cf2f3.chunk.js.map",
+    "index.html": "/myPortfolio/index.html",
+    "static/css/main.6b5077d3.chunk.css.map": "/myPortfolio/static/css/main.6b5077d3.chunk.css.map",
+    "static/js/2.9997e1be.chunk.js.LICENSE.txt": "/myPortfolio/static/js/2.9997e1be.chunk.js.LICENSE.txt",
+    "static/media/Portoflio.81137b90.jpg": "/myPortfolio/static/media/Portoflio.81137b90.jpg",
+    "static/media/country-finder-app.ad4d41e3.png": "/myPortfolio/static/media/country-finder-app.ad4d41e3.png",
+    "static/media/techStore.4324192f.jpg": "/myPortfolio/static/media/techStore.4324192f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.36221d19.js",
+    "static/js/runtime-main.5b813b4d.js",
     "static/js/2.9997e1be.chunk.js",
     "static/css/main.6b5077d3.chunk.css",
-    "static/js/main.575db2e9.chunk.js"
+    "static/js/main.028ac941.chunk.js"
   ]
 }
