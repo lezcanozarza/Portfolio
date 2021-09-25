@@ -25,7 +25,7 @@
   }
   .div > ul > li {
     padding: 5px;
-    background-color: #8EADD0;
+    background-color: #00A1F1;
     margin-left: -3rem;
     text-align: center;
   }
@@ -59,6 +59,6 @@
 .select option{
   color: white;
   font-size: 30px;
-  background-color: #8EADD0;
+  background-color: #00A1F1;
   border: 0px
 } */

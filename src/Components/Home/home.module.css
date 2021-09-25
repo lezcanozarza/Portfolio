@@ -5,7 +5,7 @@ a:link, a:visited, a:active {
   width: 50px
 }
 .certificado{
-  color: white;
+  color: #373737;
 }
 
 .container{
@@ -18,26 +18,66 @@ a:link, a:visited, a:active {
   min-height: 520px;
   height: fit-content;
   margin: 30px;
+  max-width: 731px
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profilePic{
+  justify-content: flex-end;
+  position: absolute;
+  z-index: -2;
+  display: flex;
+  height: 600px;
+  align-items: center;
+  width: 100%;
+}
+
+.profilePic img{
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 0px 10px #9EDBFA;
+  position: absolute;
+  z-index: -2;
+  margin: 5rem
+}
+
+@media(max-width: 1120px){
+  .profilePic img{
+    width: 200px;
+    height: 200px
+  }
+}
+
+@media(max-width: 1010px){
+  .profilePic{
+    display: none
+  }
 }
 
 .commonText{
   font-size: 65px;
   font-family: Montserrat;
   font-weight: bolder;
-  color: #8EADD0;
+  color: #00A1F1;
 }
 
 .blueBackground{
-  background-color: #8EADD0;
+  background-color: #00A1F1;
   width: fit-content;
   padding-inline: 10px;
-  filter: drop-shadow(8px 8px #B6CAE0);
+  filter: drop-shadow(8px 8px #9EDBFA);
 }
 
 .orangeBackground{
-  background-color: #F4C69F;
+  background-color: #FE007C;
   width: fit-content;
-  filter: drop-shadow(8px 8px #E7C7AC);
+  filter: drop-shadow(8px 8px #FF87C1);
 }
 
 .TwhiteBackground{
@@ -121,7 +161,7 @@ a:link, a:visited, a:active {
 
 .description{
   max-width: 60rem;
-  color: white;
+  color: #373737;
   font-family: Montserrat;
   display: flex;
   flex-direction: column;
@@ -146,7 +186,7 @@ a:link, a:visited, a:active {
   display: flex;
   flex-direction: column;
   min-height: 640px;
-  background-color: #8EADD0;
+  background-color: #00A1F1;
 }
 
 .skillsPageContainer{
@@ -167,7 +207,7 @@ a:link, a:visited, a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #8EADD0
+  background-color: #00A1F1
 }
 .habilities{
   display: flex;
@@ -210,7 +250,7 @@ a:link, a:visited, a:active {
 }
 
 .line{
-  background: #B6CAE0;
+  background: #9EDBFA;
   width: 1px;
   height: 30rem;
 }
@@ -223,7 +263,7 @@ a:link, a:visited, a:active {
 }
 
 .secondline{
-  background: #B6CAE0;
+  background: #9EDBFA;
   width: 40rem;
   height: 1px
 }
@@ -246,10 +286,10 @@ a:link, a:visited, a:active {
 .projectContainer{
   display: flex;
   align-items: center;
-  background-color:#8EADD0;
+  background-color:#00A1F1;
   width: 1150px;
   height: 400px;
-  filter: drop-shadow(15px 15px #B6CAE0);
+  filter: drop-shadow(15px 15px #9EDBFA);
   margin-bottom: 4.5rem;
   transition: 0.3s
 }
@@ -334,15 +374,19 @@ a:link, a:visited, a:active {
   display: flex;
   flex-direction: column;
   word-wrap: break-word;
-  color: white;
+  color: #373737;
   font-family: Montserrat;
+}
+
+.pjtitle{
+  color: white
 }
 
 .footer{
   display: flex;
   flex-direction: column;
   height: 120px;
-  background-color: #F4C69F
+  background-color: #FE007C
 }
 
 .footIcons{

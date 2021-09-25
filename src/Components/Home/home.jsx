@@ -4,21 +4,20 @@ import {HabilityCard} from '../habilityCard/habilityCard'
 import {Contact} from '../contact/contact'
 import {NavResponsive} from '../NavResponsive/NavResponsive'
 import style from './home.module.css'
-import {Fade, Slide} from 'react-reveal/';
+import {Fade} from 'react-reveal/';
 
 
 import {frontEnd, backEnd, diseño} from '../props.js'
 import techStore from '../../assets/techStore.jpg'
 import Country from '../../assets/country-finder-app.png'
+import bikes from '../../assets/bikes.png'
 import github2 from "../../assets/github2.png"
 import linkedin2 from "../../assets/linkedin2.png"
 import whatsapp2 from "../../assets/whatsapp2.png"
-import Portfolio from "../../assets/Portoflio.jpg"
-
-const github = "https://res.cloudinary.com/techstore/image/upload/v1619397811/Marcos/Portfolio/github_myhjnm.png"
-const linkedin = "https://res.cloudinary.com/techstore/image/upload/v1619397811/Marcos/Portfolio/linkedin_al9y0q.png"
-const whatsapp = "https://res.cloudinary.com/techstore/image/upload/v1619397811/Marcos/Portfolio/whatsapp_fxx00z.png"
-
+import github from "../../assets/github.png"
+import linkedin from "../../assets/linkedin.png"
+import whatsapp from "../../assets/whatsapp.png"
+import profile from '../../assets/perfil.png'
 
 export function Home(){
   return(
@@ -31,74 +30,76 @@ export function Home(){
     <NavResponsive/>
     </div>
     </Fade>
-
-
+    <div className={style.head}>
       <div className={style.namePageContainer}>
-      <Fade right big cascade>
           <span className={style.commonText}>SOY</span>
         <div className={style.blueBackground} style={{marginBottom:"8px"}}>
-        <Fade right big cascade>
+
           <span className={style.highText}>MARCOS LEZCANO</span>
-          </Fade>
+
         </div>
         <div className={style.blueBackground}>
-        <Fade right big cascade>
+
           <span className={style.highText}>FULL STACK</span>
-          </Fade>
+
         </div>
           <span className={style.commonText}>WEB DEVELOPER</span>
-          </Fade>
+
           <div className={style.icons}>
-          <Fade left big cascade>
+
             <a href="https://github.com/lezcanozarza" target="_blank" rel="noreferrer"><img src={github} alt="" width="60px" className={style.icon}/></a>
             <a href="https://www.linkedin.com/in/marcos-lezcano" target="_blank" rel="noreferrer"><img src={linkedin} alt="" width="60px" className={style.icon}/></a>
             <a href="https://wa.me/543625231570" target="_blank" rel="noreferrer"><img src={whatsapp} alt="" width="60px" className={style.icon}/></a>
-            </Fade>
+
           </div>
 
       </div>
+      <div className={style.profilePic}>
+      <img src={profile} alt=''/>
+      </div>
+      </div>
+
       <section id="about" className={style.aboutPageContainer}>
-      <Fade>
+
           <div className={style.TwhiteBackground}>
-          <span className={style.subTitle} style={{color:"#8EADD0"}}>SOBRE MI</span>
+          <span className={style.subTitle} style={{color:"#00A1F1"}}>SOBRE MI</span>
           </div>
+
         <div className={style.descriptionContainer}>
         <div className={style.description}>
         <span className={style.textDescription}>
-        Soy desarrollador web Full Stack y apasionado del Front End, amante de los diseños simples y modernos.
+        Soy desarrollador web Full Stack y me especializo Front End, amante de los diseños simples y modernos.
         Soy una persona autodidacta, siempre que puedo intento aprender nuevas tecnologías. <br/><br/>
-        Recientemente he finalizado el bootcamp de desarrollo full stack Soy Henry
+      Estudié programación Full Stack en el bootcamp Soy Henry
         <strong><a href="https://certificates.soyhenry.com/cert?id=9a14a737-bb3c-47ca-ac61-7924de3cbdf7"
         target="_blank"
         rel="noreferrer"
         className={style.certificado}> (ver certificado)</a></strong> en donde realicé varios de los proyectos
         que se encuentran en esta página y adquirí experiencia de trabajo con metodología ágil SCRUM.
+        Trabajé como Tutor Front End en CoderHouse donde tuve la oportunidad de impartir mis conocimientos de desarrollo con otros alumnos
+        y guiarlos en su proceso de aprendizaje. <br/><br/>
         Estoy buscando formar parte de un proyecto que me permita dejar mi marca en la web y con el que
         pueda crecer profesionalmente.
         </span>
         <div className={style.TwhiteBackground} style={{marginTop:"45px",marginBottom:"40px", marginLeft:"-4rem", cursor:"pointer"}}>
-        <a href="https://drive.google.com/file/d/1G1T3HmeQa3HvrbCBTI4itifglDocXlHT/view?usp=sharing" className={style.download} download="CV-Marcos-Lezcano"><span className={style.subTitle} style={{color:"#8EADD0"}}>DESCARGAR CV</span></a>
+        <a href="https://drive.google.com/file/d/1G1T3HmeQa3HvrbCBTI4itifglDocXlHT/view?usp=sharing" className={style.download} download="CV-Marcos-Lezcano"><span className={style.subTitle} style={{color:"#00A1F1"}}>DESCARGAR CV</span></a>
         </div>
         </div>
         </div>
 
-
-        </Fade>
         </section>
-        <Fade>
+
       <section id="habilidades" className={style.skillsPageContainer}>
       <div className={style.skillsPages}>
-      <Slide top>
+
       <div className={style.habilityTitle}>
       <div className={style.blueBackground}>
       <span className={style.highText}>HABILIDADES</span>
       </div>
       </div>
-      </Slide>
 
       <div className={style.habilitiesContainer}>
 
-      <Slide left>
       <div className={style.habilityContainer}>
       <div className={style.orangeBackground}>
       <span className={style.subTitle} style={{color:"white"}}>FRONT END</span>
@@ -112,14 +113,13 @@ export function Home(){
         )}
       </div>
       </div>
-      </Slide>
 
 
       <divisor className={style.cntLine}>
         <div className={style.line}>
         </div>
       </divisor>
-      <Slide bottom>
+
       <div  className={style.habilityContainer}>
       <div className={style.orangeBackground}>
       <span className={style.subTitle}  style={{color:"white"}}>BACK END</span>
@@ -133,13 +133,13 @@ export function Home(){
         )}
       </div>
       </div>
-      </Slide>
+
 
       <divisor className={style.cntLine}>
         <div className={style.line}>
         </div>
       </divisor>
-      <Slide right>
+
       <div className={style.habilityContainer}>
       <div className={style.orangeBackground}>
       <span className={style.subTitle} style={{color:"white"}}>DISEÑO</span>
@@ -160,14 +160,14 @@ export function Home(){
         )}
       </div>
       </div>
-</Slide>
+
       </div>
 
 
       </div>
 
       </section>
-      </Fade>
+
 
       <divisor className={style.secondcntLine}>
         <div className={style.secondline}>
@@ -176,18 +176,18 @@ export function Home(){
 
       <section id="proyectos" className={style.projectsPageContainer}>
 
-      <Fade>
+
       <div className={style.blueBackground} style={{margin:"4rem"}}>
       <span className={style.highText}>PROYECTOS</span>
       </div>
-      </Fade>
+
 
       <div className={style.projectsContainer}>
-      <Slide left>
+
         <div className={style.projectContainer}>
           <div className={style.left}>
             <div className={style.projectDesc}>
-              <label style={{fontWeight:"800",fontSize:"35px", marginBottom:"10px", cursor:"text"}}>Ecommerce Tech Store</label>
+              <label className={style.pjtitle} style={{fontWeight:"800",fontSize:"35px", marginBottom:"10px", cursor:"text"}}>Ecommerce Tech Store</label>
               <label style={{fontSize:"19px", cursor:"text"}}>Proyecto final del bootcamp soy Henry. Consiste en una tienda
               online de hardware hecha desde cero completamente funcional, permite buscar productos,
               agregarlos al carrito o lista de deseos, comprar y recibirlo. En este proyecto se usaron
@@ -196,28 +196,56 @@ export function Home(){
             </div>
 
             <div className={style.buttons}>
+              <div className={style.projectwhiteBackground}>
+              <a href="http://henrystechstore.web.app/" target="_blank" rel="noreferrer">
+              <span className={style.projectsubTitle} style={{color:"#FE007C"}}>DEMO</span>
+              </a>
+              </div>
             <a href="https://github.com/lezcanozarza/TechStoreEcommerce" target="_blank" rel="noreferrer">
             <div className={style.projectwhiteBackground}>
-            <span className={style.projectsubTitle} style={{color:"#F4C69F"}}>VER REPO</span>
+            <span className={style.projectsubTitle} style={{color:"#FE007C"}}>REPOSITORIO</span>
             </div>
             </a>
-            <div className={style.projectwhiteBackground}>
-            <a href="http://henrystechstore.web.app/" target="_blank" rel="noreferrer">
-            <span className={style.projectsubTitle} style={{color:"#F4C69F"}}>VER SITIO</span>
-            </a>
-            </div>
             </div>
           </div>
           <div className={style.projectImg}>
           <img src={techStore} alt="" className={style.imagen}/>
           </div>
         </div>
-        </Slide>
-        <Slide left>
+
         <div className={style.projectContainer}>
           <div className={style.left}>
             <div className={style.projectDesc}>
-              <label style={{fontWeight:"800",fontSize:"35px", marginBottom:"10px"}}>Country Finder App</label>
+              <label className={style.pjtitle} style={{fontWeight:"800",fontSize:"35px", marginBottom:"10px"}}>Stolen Bikes Index</label>
+              <label style={{fontSize:"19px"}}>Aplicación para ver distintas bicicletas robadas en la zona de berlin.
+                Se puede filtrar por nombre del caso y por fecha. También se puede ver el detalle individual y un mapa en la zona
+                del robo. <br/>
+                Hecho con React y Context. Los datos los obtengo consumiendo la api "bikeIndex."
+              </label>
+            </div><br/>
+
+            <div className={style.buttons}>
+              <a href="https://stolenbikesindex.netlify.app/" target="_blank" rel="noreferrer">
+              <div className={style.projectwhiteBackground}>
+              <span className={style.projectsubTitle} style={{color:"#FE007C"}}>DEMO</span>
+              </div>
+              </a>
+            <a href="https://github.com/lezcanozarza/react-challenge" target="_blank" rel="noreferrer">
+            <div className={style.projectwhiteBackground}>
+            <span className={style.projectsubTitle} style={{color:"#FE007C"}}>REPOSITORIO</span>
+            </div>
+            </a>
+            </div>
+          </div>
+          <div className={style.projectImg}>
+          <img src={bikes} alt="" className={style.imagen}/>
+          </div>
+        </div>
+
+        <div className={style.projectContainer}>
+          <div className={style.left}>
+            <div className={style.projectDesc}>
+              <label className={style.pjtitle} style={{fontWeight:"800",fontSize:"35px", marginBottom:"10px"}}>Country Finder App</label>
               <label style={{fontSize:"19px"}}>Creación desde cero de una aplicación para ver distintos países
               y sus respectivas actividades turísticas. Para el Back End se utilizaron llamados a una api externa,
               Node.js y Express. Para la base de datos se utlizó PostgreSQL y Sequelize. Para el Front End se utilizó
@@ -228,7 +256,7 @@ export function Home(){
             <div className={style.buttons}>
             <a href="https://github.com/lezcanozarza/Country-Finder-App" target="_blank" rel="noreferrer">
             <div className={style.projectwhiteBackground}>
-            <span className={style.projectsubTitle} style={{color:"#F4C69F"}}>VER REPO</span>
+            <span className={style.projectsubTitle} style={{color:"#FE007C"}}>REPOSITORIO</span>
             </div>
             </a>
             </div>
@@ -237,34 +265,6 @@ export function Home(){
           <img src={Country} alt="" className={style.imagen}/>
           </div>
         </div>
-      </Slide>
-
-      <Slide left>
-      <div className={style.projectContainer}>
-        <div className={style.left}>
-          <div className={style.projectDesc}>
-            <label style={{fontWeight:"800",fontSize:"35px", marginBottom:"10px"}}>¡Esta Página! Portfolio</label>
-            <label style={{fontSize:"19px"}}>Este Portfolio Lo hice yo mismo utilizando JavaScript, CSS y React.
-            También utilicé react-reveal y react-scroll para las animaciones y Cloudinary para almacenar algunas imágenes.
-            El diseño es 100% propio, así como la paleta de colores. Personalmente son colores que me representan mucho.
-            </label>
-          </div><br/>
-
-          <div className={style.buttons}>
-          <a href="https://github.com/lezcanozarza/Portfolio" target="_blank" rel="noreferrer">
-          <div className={style.projectwhiteBackground}>
-          <span className={style.projectsubTitle} style={{color:"#F4C69F"}}>VER REPO</span>
-          </div>
-          </a>
-          </div>
-        </div>
-        <div className={style.projectImg} style={{width:"500px"}}>
-        <img src={Portfolio} alt="" className={style.imagen} style={{borderLeft:"1px solid white", borderBottom:"1px solid white"}}/>
-        </div>
-      </div>
-    </Slide>
-
-
 
       </div>
 
