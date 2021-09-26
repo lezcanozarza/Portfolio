@@ -47,6 +47,22 @@ a:link, a:visited, a:active {
   margin: 8rem
 }
 
+.profileSmallPic{
+  justify-content: flex-end;
+  display: flex;
+  height: 600px;
+  align-items: center;
+  width: 100%;
+}
+
+.profileSmallPic img{
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 0px 10px #9EDBFA;
+  margin: 8rem
+}
+
 @media(max-width: 1120px){
   .profilePic img{
     width: 200px;
@@ -57,6 +73,20 @@ a:link, a:visited, a:active {
 @media(max-width: 1010px){
   .profilePic{
     display: none
+  }
+  .head{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .profileSmallPic{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 10px #9EDBFA;
+    /* margin: 8rem */
   }
 }
 

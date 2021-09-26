@@ -8,13 +8,14 @@ export function Contact(){
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(e.target)
-    emailjs.sendForm('service_mx6keqh','template_v47xxjh', e.target, 'user_XoLpZirwgT2E9YeW0khqR')
     e.target.reset()
     Swal.fire(
       '¡Mail Enviado!',
       '¡Muchas gracias!',
       'success'
-    )
+    ).then(() => {
+      emailjs.sendForm('service_mx6keqh','template_v47xxjh', e.target, 'user_XoLpZirwgT2E9YeW0khqR')
+    })
   }
   return(
 
