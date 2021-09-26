@@ -68,9 +68,9 @@ export function Home(){
         <div className={style.descriptionContainer}>
         <div className={style.description}>
         <span className={style.textDescription}>
-        Soy desarrollador web Full Stack y me especializo Front End, amante de los diseños simples y modernos.
+        Soy desarrollador web especializado en Front End, amante de los diseños simples y modernos.
         Soy una persona autodidacta, siempre que puedo intento aprender nuevas tecnologías. <br/><br/>
-      Estudié programación Full Stack en el bootcamp Soy Henry
+      Estudié programación web Full Stack en el bootcamp Soy Henry
         <strong><a href="https://certificates.soyhenry.com/cert?id=9a14a737-bb3c-47ca-ac61-7924de3cbdf7"
         target="_blank"
         rel="noreferrer"
