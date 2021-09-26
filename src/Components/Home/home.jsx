@@ -74,15 +74,15 @@ export function Home(){
         <strong><a href="https://certificates.soyhenry.com/cert?id=9a14a737-bb3c-47ca-ac61-7924de3cbdf7"
         target="_blank"
         rel="noreferrer"
-        className={style.certificado}> (ver certificado)</a></strong> en donde realicé varios de los proyectos
+        className={style.certificado}> (ver certificado)</a></strong> donde realicé varios de los proyectos
         que se encuentran en esta página y adquirí experiencia de trabajo con metodología ágil SCRUM.
-        Trabajé como Tutor Front End en CoderHouse donde tuve la oportunidad de impartir mis conocimientos de desarrollo con otros alumnos
+        También trabajé como Tutor Front End en CoderHouse donde tuve la oportunidad de impartir mis conocimientos de desarrollo con otros alumnos
         y guiarlos en su proceso de aprendizaje. <br/><br/>
-        Estoy buscando formar parte de un proyecto que me permita dejar mi marca en la web y con el que
+      Actualmente estoy buscando trabajar en un lugar que me permita dejar mi marca en la web y con el que
         pueda crecer profesionalmente.
         </span>
         <div className={style.TwhiteBackground} style={{marginTop:"45px",marginBottom:"40px", marginLeft:"-4rem", cursor:"pointer"}}>
-        <a href="https://drive.google.com/file/d/1G1T3HmeQa3HvrbCBTI4itifglDocXlHT/view?usp=sharing" className={style.download} download="CV-Marcos-Lezcano"><span className={style.subTitle} style={{color:"#00A1F1"}}>DESCARGAR CV</span></a>
+        <a href="https://drive.google.com/file/d/1G1T3HmeQa3HvrbCBTI4itifglDocXlHT/view?usp=sharing" target="_blank" rel="noreferrer" className={style.download} ><span className={style.subTitle} style={{color:"#00A1F1"}}>DESCARGAR CV</span></a>
         </div>
         </div>
         </div>
@@ -106,10 +106,16 @@ export function Home(){
       </div>
       <div className={style.habilities}>
         {frontEnd.map((hability) =>
+          hability.name === "Figma" ?
           <HabilityCard
           url={hability.url}
           name={hability.name}
+          height="120px"
           />
+          :
+          <HabilityCard
+          url={hability.url}
+          name={hability.name}/>
         )}
       </div>
       </div>
@@ -142,7 +148,7 @@ export function Home(){
 
       <div className={style.habilityContainer}>
       <div className={style.orangeBackground}>
-      <span className={style.subTitle} style={{color:"white"}}>DISEÑO</span>
+      <span className={style.subTitle} style={{color:"white"}}>OTRAS</span>
       </div>
       <div className={style.habilities}>
         {diseño.map((hability) =>
