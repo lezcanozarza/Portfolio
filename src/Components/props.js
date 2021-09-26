@@ -23,7 +23,11 @@
     {
       name: "Bootstrap",
       url: "https://res.cloudinary.com/techstore/image/upload/v1619411069/Marcos/Portfolio/bootstrap-4_od87ai.svg"
-    }
+    },
+    {
+      name: "Styled Components",
+      url: "https://cdn-media-1.freecodecamp.org/images/1*p1TndLk3UsGPBsM7qHPZIw.png"
+    },
   ]
 
   export const backEnd = [
@@ -46,6 +50,10 @@
     {
       name: "PostgreSQL",
       url: "https://res.cloudinary.com/techstore/image/upload/v1619411925/Marcos/Portfolio/postgresql_trhpwd.svg"
+    },
+    {
+      name: 'Firebase',
+      url: "https://www.gstatic.com/devrel-devsite/prod/v8bb8fa0afe9a8c3a776ebeb25d421bb443344d789b3607754dfabea418b8c4be/firebase/images/touchicon-180.png"
     }
   ]
 
